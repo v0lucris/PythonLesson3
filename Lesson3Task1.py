@@ -2,14 +2,8 @@
 # сумму элементов списка, стоящих на нечётной позиции.
 #    Пример:
 #- [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
-
+import math
 lst = [3, 5, 7, 10, 29, 8, 10 ]
-
-sum = 0
-i = 0
-for i in range( 1, len(lst)):
-    if i % 2 != 0 :
-        sum = sum + lst[i]
-print(sum)
-   
+b = [v for k, v in enumerate(lst) if k % 2]
+print(sum(b))
 
